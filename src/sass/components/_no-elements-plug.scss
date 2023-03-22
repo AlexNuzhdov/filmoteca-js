@@ -1,0 +1,32 @@
+.no-element-found {
+    width: 205px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 154px;
+    transform: translate(-74%, 0);
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.no-element-found span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: getColor('hover');
+}
+
+
+@include for-tablet-up {
+
+    .no-element-found {
+        width: 470px;
+        top: 154px;
+        transform: translate(-50%, 0);
+    }
+
+    .no-element-found span {
+        font-size: 14px;
+    }
+}

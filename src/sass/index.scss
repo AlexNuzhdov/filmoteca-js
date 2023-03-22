@@ -1,0 +1,22 @@
+@import './base/normalize';
+
+@import './utils/breakpoints';
+@import './utils/variables';
+@import './utils/animation';
+
+@import './components/container';
+@import './components/common';
+@import './components/auth';
+@import './components/header';
+@import './components/gallery';
+@import './components/pagination';
+@import './components/switch-day-night';
+@import './components/arrow-top';
+@import './components/main';
+@import './components/footer';
+@import './components/myLibrary';
+@import './components/loader';
+@import './components/modal_movie_card';
+@import './components/no-elements-plug';
+@import './components/modal-team';
+@import './components/change_btn_modal';

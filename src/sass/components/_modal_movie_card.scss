@@ -1,0 +1,262 @@
+body.show-modal .modal-movie-card__backdrop {
+  opacity: 1;
+  pointer-events: initial;
+}
+
+body.show-modal .modal-movie-card {
+  transform: scale(1);
+}
+
+.modal-movie-card__container {
+  position: relative;
+  margin-top: 20rem;
+
+  @include for-tablet-up {
+    margin-top: 0rem;
+  }
+}
+
+.modal-movie-card__backdrop {
+  z-index: 1001;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition-duration: 150ms;
+  transition-property: all;
+  backdrop-filter: saturate(180%) blur(10px);
+  background-color: rgba(0, 0, 0, 0.25);
+
+  @include for-tablet-up {
+    overflow: hidden;
+  }
+}
+
+.modal-movie-card {
+  font-family: Roboto, sans-serif;
+  width: 280px;
+  height: 100%;
+  padding: 48px 20px 40px;
+  background-color: $text-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  @include for-tablet-up {
+    width: 704px;
+    height: 552px;
+    padding: 40px 72px 40px 36px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @include for-desktop-up {
+    width: 806px;
+    height: 558px;
+    padding: 40px 12px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+// СВГ закрытие модального окна
+.modal-movie-card__close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5px;
+  right: 0rem;
+  padding: 20px;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  background-color: $text-white-color;
+
+  @include for-tablet-up {
+    top: 1px;
+    right: 1px;
+  }
+}
+
+.modal-movie-card__icon-exit {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 1004;
+  width: 24px;
+  height: 24px;
+}
+
+//
+.modal-movie-card__film-title {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+
+.modal-movie-card__table {
+  border-collapse: collapse;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 15px;
+}
+
+.modal-movie-card__table-refs {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: getColor('modal-text-color');
+}
+
+.modal-movie-card__table-value {
+  color: $title-text-color;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+
+  @include for-tablet-up {
+    padding-left: 50px;
+  }
+
+  @include for-desktop-up {
+    padding-left: 95px;
+  }
+}
+
+.modal-movie-card__about {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.modal-movie-card__description {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 26px;
+
+  @include for-tablet-up {
+    margin-bottom: 20px;
+  }
+}
+
+.modal-movie-card__button-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @include for-tablet-up {
+    justify-content: start;
+
+    &> :first-child {
+      margin-right: 15px;
+    }
+  }
+
+  @include for-desktop-up {
+    margin-left: 8px;
+  }
+}
+
+.modal-movie-card__img-wrapper {
+  margin-bottom: 30px;
+  width: 238px;
+  height: 357px;
+  overflow: hidden;
+  border-radius: 1%;
+
+  @include for-tablet-up {
+    width: 250px;
+    height: 374px;
+    margin-bottom: 0px;
+  }
+
+  @include for-desktop-up {
+    width: 319px;
+    height: 478px;
+    margin-bottom: 0px;
+  }
+}
+
+.modal-movie-card__img-wrapper>img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  // @include for-tablet-up {
+
+  //   object-fit: contain;
+  // }
+  // @include for-desktop-up {
+  //   width: 370px;
+  //   height: 478px;
+  //   object-fit: contain;
+  // }
+}
+
+.modal-movie-card__description {
+  @include for-tablet-up {
+    max-height: 150px;
+    overflow: scroll;
+  }
+
+  @include for-desktop-up {
+    max-height: 200px;
+    overflow: hidden;
+  }
+}
+
+.modal-movie-card__film-desсriptoin {
+  width: 240px;
+
+  @include for-tablet-up {
+    width: 264px;
+    margin-left: 60px;
+  }
+
+  @include for-desktop-up {
+    width: 396px;
+    margin-left: 20px;
+  }
+}
+
+.modal-movie-card__button {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+
+  @include for-tablet-up {
+    justify-content: flex-start;
+  }
+}
+
+.modal-movie-card__item-desc--orange {
+  background: $span-bg-color;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 14px;
+  color: $text-white-color;
+  padding: 1px 9px;
+}
+
+.modal-movie-card__item-desc--grey {
+  font-size: 12px;
+  line-height: 14px;
+  color: $title-text-color;
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding: 1px 5px;
+}

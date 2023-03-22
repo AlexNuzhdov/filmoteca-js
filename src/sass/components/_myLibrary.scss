@@ -1,0 +1,266 @@
+
+
+@media screen and (max-width: 767px) {
+   
+    .overlay-lab {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.56), 
+            rgba(0, 0, 0, 0.56)),
+        url('/src/images/overlay/lib-mob.jpg');
+        height: 230px;
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .button-watched, .button-queue {
+            width: 129.53px;
+            height: 44px;
+            box-shadow: 0px 8px 43px rgba(255, 107, 1, 0.6);
+            border: 1px solid getColor('extra-text');
+            border-radius: 5px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: getColor('extra-text');
+            background-color: transparent;
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transform: rotateX(0deg) translateZ(25px);
+            
+        }
+        
+        }
+         .button-watched:hover,
+         .button-watched:focus,
+         .button-watched:active {
+             background: getColor('span-bg-color');
+             border: none;
+             border-radius: 5px;
+             transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+             transform: scale(1.05) rotateX(0deg) translateZ(25px);
+         }
+        .button-watched:hover:before {
+            width: 100%;
+        }
+        
+        .button-watched {
+            position: relative;
+        }
+        
+        .button-queue:hover,
+        .button-queue:focus,
+        .button-queue:active {
+            background: getColor('span-bg-color');
+            border: none;
+            border-radius: 5px;
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transform: scale(1.05) rotateX(0deg) translateZ(25px);
+        }
+        .button-queue:hover:before {
+            width: 100%;
+        }
+        
+        .button-queue {
+            position: relative;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            padding-top: 60px;
+        }
+        .button-queue {
+            margin-left: 25px;
+        }
+        
+    }
+    
+@media screen and (min-width:768px) {
+   
+    .overlay-lab {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.56), 
+            rgba(0, 0, 0, 0.56)),
+        url('/src/images/overlay/lib-tab.jpg');
+        height: 216px;
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .button-watched {
+        width: 152px;
+        height: 44px;
+        color: getColor('extra-text');
+        background-color: transparent;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        border-radius: 5px;
+        border: 1px solid getColor('extra-text');
+        text-transform: uppercase;
+        text-align: center;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: rotateX(0deg) translateZ(25px);
+        
+        
+    }
+    .button-queue {
+        width: 152px;
+        height: 44px;
+        color: getColor('extra-text');
+        background-color: transparent;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        border: 1px solid getColor('extra-text');
+        border-radius: 5px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: 32px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: rotateX(0deg) translateZ(25px);
+    }
+  .button-watched:hover,
+  .button-watched:focus,
+  .button-watched:active {
+      background: getColor('span-bg-color');
+      border: none;
+      border-radius: 5px;
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transform: scale(1.05) rotateX(0deg) translateZ(25px);
+  }
+    .button-watched:hover:before {
+        width: 100%;
+    }
+    
+    .button-watched {
+        position: relative;
+    }
+    
+    .button-queue:hover,
+    .button-queue:focus,
+    .button-queue:active {
+        background: getColor('span-bg-color');
+        border: none;
+        border-radius: 5px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: scale(1.05) rotateX(0deg) translateZ(25px);
+        }
+
+    .button-queue:hover:before {
+        width: 100%;
+    }
+    
+    .button-queue {
+        position: relative;
+        margin-left: 32px;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+   
+}
+    
+
+@media screen and (min-width:1280px) {
+   
+   
+
+
+    .overlay-lab {
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.56), 
+            rgba(0, 0, 0, 0.56)),
+        url('/src/images/overlay/lib-deskt.jpg');
+        height: 216px;
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .button-watched {
+        width: 148px;
+        height: 42px;
+        color: getColor('extra-text');
+        background-color: transparent;
+         cursor: pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        border-radius: 5px;
+        border: 1px solid getColor('extra-text');
+        text-transform: uppercase;
+        text-align: center;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: rotateX(0deg) translateZ(25px);
+    }
+    .button-queue {
+       width: 148px;
+       height: 42px;
+       color: getColor('extra-text');
+       background-color: transparent;
+       cursor: pointer;
+       font-style: normal;
+       font-weight: 500;
+       font-size: 12px;
+       line-height: 16px;
+       border-radius: 5px;
+       border: 1px solid getColor('extra-text');
+       text-transform: uppercase;
+       text-align: center;
+       transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       transform: rotateX(0deg) translateZ(25px);
+    }
+    .button-watched:hover,
+    .button-watched:focus,
+    .button-watched:active {
+        background: getColor('span-bg-color');
+        border: none;
+        border-radius: 5px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform: scale(1.05) rotateX(0deg) translateZ(25px);
+    }
+    .button-queue :hover:before {
+        width: 100%;
+    }
+    
+    .button-watched {
+        position: relative;
+    }
+    
+     .button-queue:hover,
+     .button-queue:focus,
+     .button-queue:active {
+            background: getColor('span-bg-color');
+            border: none;
+            border-radius: 5px;
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transform: scale(1.05) rotateX(0deg) translateZ(25px);
+        }
+  
+    .button-queue {
+        position: relative;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    
+}
