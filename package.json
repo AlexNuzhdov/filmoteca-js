@@ -2,7 +2,7 @@
 	"name": "filmoteca-js",
 	"version": "2.0.0",
 	"description": "",
-	"homepage": "https://alexnuzhdov.github.io/filmoteca-js/",
+	"homepage": "https://alexnuzhdov.github.io/filmoteca-js",
 	"scripts": {
 	  "start": "parcel src/*.html",
 	  "build": "parcel build src/*.html --public-url /filmoteka-js/"
